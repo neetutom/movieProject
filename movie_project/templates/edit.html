@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div style="display:block;
+    workon
+    margin:20px;
+    padding: 8px 12px;
+    border: 1px;">
+        <div class="col-md-6">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Update Movie">
+        </form>
+        </div>
+    </div>
+
+{% endblock %}
